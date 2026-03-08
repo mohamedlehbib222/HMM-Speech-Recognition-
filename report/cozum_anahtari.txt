@@ -1,0 +1,18 @@
+HMM Speech Recognition Report
+
+Bu projede Hidden Markov Model (HMM) kullanılarak basit bir konuşma tanıma sistemi simüle edilmiştir.
+
+İki kelime modellenmiştir: EV ve OKUL.
+
+Gözlem sembolleri:
+0 = High frekans
+1 = Low frekans
+
+Örnek gözlem dizisi:
+[High, Low]
+
+Her model için gözlem dizisinin olasılığı hesaplanır. En yüksek log-likelihood değerine sahip model tanınan kelimeyi belirler.
+
+Ses verisindeki gürültü emisyon olasılıklarını etkileyebilir çünkü gözlemler gerçek fonemi tam olarak yansıtmayabilir.
+
+Gerçek sistemlerde binlerce kelime bulunduğu için günümüzde HMM yerine Deep Learning yöntemleri tercih edilmektedir.
